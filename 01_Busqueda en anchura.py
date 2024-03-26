@@ -38,5 +38,5 @@ def bfs(grafico, inicio, fin): ## Se crea la funcion de busqueda en anchura (bfs
                 cola.append(ruta_nueva) ## Agregamos la nueva ruta a la cola de rutas por visitar
 
 
-ruta = bfs(rutas, 'Guadalajara', 'Tlajomulco de Zúñiga') ## llamamos a la función bfs con el grafo rutas, el nodo de inicio ‘Guadalajara’ y el nodo de destino ‘El Salto’
-print(f"La ruta más corta de Guadalajara a Tlajomulco de Zúñiga es: {' -> '.join(ruta)}") ## Imprimimos la ruta más corta de Guadalajara a El Salto
+ruta = bfs(rutas, 'Guadalajara', 'Tlajomulco de Zúñiga') ## llamamos a la función bfs con el grafo rutas, el nodo de inicio ‘Guadalajara’ y el nodo de destino ‘Tlajomulco de Zúñiga’
+print(f"La ruta más corta de Guadalajara a Tlajomulco de Zúñiga es: {' -> '.join(ruta)}") ## Imprimimos la ruta más corta de Guadalajara a Tlajomulco de Zúñiga
