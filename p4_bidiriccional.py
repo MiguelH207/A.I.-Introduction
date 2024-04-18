@@ -45,8 +45,7 @@ vuelos = {
     'Tijuana': {'Monterrey'},  # La ciudad de 'Tijuana' tiene vuelos directos a 'Monterrey'
 }
 
-# 'print' es una función incorporada en Python que imprime el argumento dado a la consola.
-# Aquí se utiliza para imprimir los resultados de la función 'busqueda_bidireccional'.
+
 # La función 'busqueda_bidireccional' se llama con el grafo 'vuelos' y un par de ciudades como argumentos.
 print(busqueda_bidireccional(vuelos, 'Ciudad de México', 'Tijuana'))  # Devuelve: "Existe una ruta entre Ciudad de México y Tijuana."
 print(busqueda_bidireccional(vuelos, 'Ciudad de México', 'Mérida'))  # Devuelve: "Una o ambas ciudades no existen en la red de vuelos."
