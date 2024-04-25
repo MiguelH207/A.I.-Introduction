@@ -2,7 +2,6 @@
 # 21310236 # 
 
 ## BUSQUEDA EN ANCHURA ##
-
 from collections import deque ## Importamos la clase deque del modulo collections, que permite agregar y eliminar elementos del principio y del final
 
 
