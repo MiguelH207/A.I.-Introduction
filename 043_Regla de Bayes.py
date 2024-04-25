@@ -1,34 +1,25 @@
-# Miguel Angel Huerta Castillo 21310236 # 
-# se utiliza para calcular la probabilidad de que ocurra un evento A dada la ocurrencia de un evento B, utilizando información previa sobre la probabilidad de A 
-# y las probabilidades condicionales de B dado A y B dado no A.
+# Miguel Angel Huerta Castillo     21310236
+# Este programa en Python implementa la Regla de Bayes para calcular la probabilidad condicional de un evento dado el conocimiento de otros eventos.
 
-# Definición de la función que calcula la probabilidad condicional utilizando la regla de Bayes
-def bayes_rule(prior_A, prob_B_given_A, prob_B_given_not_A):
-    # Calcula la probabilidad complementaria de A (no tener la enfermedad)
-    not_A = 1 - prior_A
-    # Calcula el numerador de la regla de Bayes
-    numerator = prob_B_given_A * prior_A
-    # Calcula el denominador de la regla de Bayes
-    denominator = numerator + prob_B_given_not_A * not_A
-    # Calcula la probabilidad condicional usando la regla de Bayes
-    posterior_A = numerator / denominator
-    # Devuelve la probabilidad condicional
-    return posterior_A
+# Definición de la función para calcular la probabilidad condicional usando la Regla de Bayes
+def regla_de_bayes(probabilidad_A, probabilidad_B_dado_A, probabilidad_B_dado_no_A):
+    # Calcula la probabilidad complementaria de A
+    probabilidad_no_A = 1 - probabilidad_A
+    # Calcula la probabilidad de B usando la fórmula de Bayes
+    probabilidad_B = (probabilidad_A * probabilidad_B_dado_A) + (probabilidad_no_A * probabilidad_B_dado_no_A)
+    # Calcula la probabilidad condicional de A dado B usando la fórmula de Bayes
+    probabilidad_A_dado_B = (probabilidad_A * probabilidad_B_dado_A) / probabilidad_B
+    return probabilidad_A_dado_B
 
-# Probabilidad de tener la enfermedad antes de realizar la prueba (prior probability)
-prior_disease = 0.01
-# Sensibilidad de la prueba (probabilidad de obtener un resultado positivo si se tiene la enfermedad)
-sensitivity = 0.95
-# Especificidad de la prueba (probabilidad de obtener un resultado negativo si no se tiene la enfermedad)
-specificity = 0.90
+# Probabilidad de que un paciente tenga la enfermedad
+probabilidad_enfermedad = 0.01
+# Probabilidad de que el paciente tenga un resultado positivo en la prueba si tiene la enfermedad
+probabilidad_positivo_dado_enfermedad = 0.95
+# Probabilidad de que el paciente tenga un resultado positivo en la prueba si no tiene la enfermedad
+probabilidad_positivo_dado_no_enfermedad = 0.10
 
-# Probabilidad de obtener un resultado positivo si se tiene la enfermedad (probabilidad condicional)
-prob_positive_given_disease = sensitivity
-# Probabilidad de obtener un resultado positivo si no se tiene la enfermedad (probabilidad condicional)
-prob_positive_given_no_disease = 1 - specificity
+# Calcula la probabilidad condicional de que el paciente tenga la enfermedad dado que el resultado de la prueba es positivo
+probabilidad_enfermedad_dado_positivo = regla_de_bayes(probabilidad_enfermedad, probabilidad_positivo_dado_enfermedad, probabilidad_positivo_dado_no_enfermedad)
 
-# Aplicación de la regla de Bayes para calcular la probabilidad de tener la enfermedad dado un resultado positivo en la prueba
-posterior_disease = bayes_rule(prior_disease, prob_positive_given_disease, prob_positive_given_no_disease)
-
-# Impresión del resultado
-print("La probabilidad de tener la enfermedad dado un resultado positivo en la prueba es:", posterior_disease)
+# Imprime el resultado
+print("La probabilidad de que el paciente tenga la enfermedad dado un resultado positivo en la prueba es:", probabilidad_enfermedad_dado_positivo)
