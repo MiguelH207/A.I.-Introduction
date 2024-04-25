@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo    21310236
+
 # Importamos la biblioteca random para generar números aleatorios
 import random
 
