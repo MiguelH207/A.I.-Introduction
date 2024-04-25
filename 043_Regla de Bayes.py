@@ -1,3 +1,7 @@
+# Miguel Angel Huerta Castillo 21310236 # 
+# se utiliza para calcular la probabilidad de que ocurra un evento A dada la ocurrencia de un evento B, utilizando información previa sobre la probabilidad de A 
+# y las probabilidades condicionales de B dado A y B dado no A.
+
 # Definición de la función que calcula la probabilidad condicional utilizando la regla de Bayes
 def bayes_rule(prior_A, prob_B_given_A, prob_B_given_not_A):
     # Calcula la probabilidad complementaria de A (no tener la enfermedad)
