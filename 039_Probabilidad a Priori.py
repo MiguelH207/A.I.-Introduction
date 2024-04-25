@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo        21310236
+
 # Importamos la función Counter del módulo collections
 from collections import Counter
 
