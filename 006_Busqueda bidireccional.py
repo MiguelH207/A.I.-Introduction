@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo   21310236
+
 # Definimos la función de búsqueda bidireccional
 def busqueda_bidireccional(vuelos, inicio, objetivo):
     # Verificamos si las ciudades de inicio y objetivo existen en el diccionario de vuelos

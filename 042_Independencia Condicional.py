@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo     21310236 
+
 # Importamos la función product de la librería itertools para calcular el producto cartesiano de dos conjuntos.
 from itertools import product
 

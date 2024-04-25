@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo   21310236
+
 # Definición del grafo de ciudades
 grafo = {
     'Guadalajara': ['Tepic', 'Zacatecas', 'Morelia'],  # Las ciudades conectadas a Guadalajara

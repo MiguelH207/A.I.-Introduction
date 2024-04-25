@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo    21310236
+
 # Definición de la función para calcular la probabilidad condicionada
 def probabilidad_condicionada(prob_A, prob_B_dado_A, prob_B_dado_no_A):
     # Calcula la probabilidad condicionada utilizando el teorema de Bayes

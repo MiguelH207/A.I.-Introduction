@@ -2,7 +2,6 @@
 # 21310236 # 
 
 ## BUSQUEDA COSTE UNIFORME ##
-
 import heapq ## 
 
 # Definimos el mapa con las distancias entre las ciudades

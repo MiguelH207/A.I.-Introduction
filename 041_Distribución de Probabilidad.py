@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo     21310236
+
 import random  # Importamos la librería random para generar números aleatorios
 
 # Definimos una función llamada 'lanzar_dado' que simula el lanzamiento de un dado de 6 caras
