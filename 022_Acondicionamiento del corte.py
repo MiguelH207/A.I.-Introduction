@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo     21310236
+
 # Definimos el número total de elementos que necesitamos distribuir
 num_elementos = 30
 
