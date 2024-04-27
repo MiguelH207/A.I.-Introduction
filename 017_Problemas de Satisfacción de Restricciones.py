@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo   21310236
+
 # Importamos la librería de numpy para manejar matrices
 import numpy as np
 
