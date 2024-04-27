@@ -1,7 +1,7 @@
 # Miguel Angel Huerta Castillo     21310236
 # Este programa es un ejemplo de un controlador simple para un robot móvil utilizando un software robótico.
 # Utiliza una biblioteca de control de robot llamada 'robotics' para controlar el movimiento del robot.
-
+ 
 # Importamos la biblioteca 'robotics' para controlar el robot
 import robotics
 
