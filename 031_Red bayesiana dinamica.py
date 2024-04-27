@@ -1,3 +1,5 @@
+# Miguel Angel HJuerta Castillo     21310236
+
 import numpy as np  # Importamos la librería numpy para operaciones matemáticas eficientes
 
 # Definimos las probabilidades iniciales de que el semáforo esté en verde o rojo
