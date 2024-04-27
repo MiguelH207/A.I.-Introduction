@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo   21310236
+
 # Definimos la función para verificar si una reina puede ser colocada en el tablero[pos][col]
 def es_seguro(tablero, fila, col, n):
     # Verificamos la fila en el lado izquierdo
