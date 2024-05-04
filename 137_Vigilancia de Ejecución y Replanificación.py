@@ -4,7 +4,7 @@
 # La vigilancia de ejecución permite monitorear el progreso de las tareas asignadas y tomar decisiones de replanificación si es necesario.
 # En este ejemplo, se simula la asignación de tareas a recursos y se realiza la vigilancia de ejecución para detectar si una tarea no se ha completado a tiempo.
 # Si una tarea no se completa a tiempo, se replanifica asignando la tarea a otro recurso disponible.
-
+ 
 class Tarea:
     def __init__(self, nombre, duracion):
         self.nombre = nombre  # Nombre de la tarea
