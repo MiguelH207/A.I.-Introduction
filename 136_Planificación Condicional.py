@@ -2,6 +2,7 @@
 # Este programa implementa un ejemplo práctico de planificación usando Planificación Condicional.
 # El código define una serie de tareas con condiciones de ejecución y luego planifica la ejecución de estas tareas de acuerdo con las condiciones.
 
+
 # Definición de las tareas y sus condiciones
 tasks = {
     "Tarea 1": {"condición": False},  # Define la Tarea 1 con condición inicial como False
