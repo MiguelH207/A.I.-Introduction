@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo   21310236
+
 import random  # Importamos el módulo random para generar números aleatorios
 
 def euclidean_distance(city1, city2):  # Función para calcular la distancia euclidiana entre dos ciudades

@@ -2,7 +2,7 @@
 
 # Este programa implementa el algoritmo GRAPHPLAN para la planificación en inteligencia artificial.
 # Se utiliza un ejemplo práctico de planificación para ilustrar su funcionamiento.
-
+ 
 from itertools import combinations
 
 class GraphPlan:

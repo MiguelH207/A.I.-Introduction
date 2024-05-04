@@ -1,3 +1,6 @@
+# Miguel Angel Huerta Castillo 21310236
+
+
 import heapq  # Importamos el módulo heapq para utilizar una cola de prioridad
 
 class Nodo:

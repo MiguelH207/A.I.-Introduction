@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo   21310236
+
 import numpy as np
 
 # Definimos la función que queremos maximizar

@@ -1,3 +1,5 @@
+# Miguel Angel Huerta Castillo  21310236
+
 import random  # Importamos el módulo random para generar números aleatorios
 
 # Definimos la función objetivo
