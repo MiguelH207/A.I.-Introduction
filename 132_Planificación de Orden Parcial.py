@@ -2,7 +2,7 @@
 # Programa de Planificación usando Planificación de Orden Parcial
 # Este programa implementa un algoritmo de planificación utilizando la técnica de Planificación de Orden Parcial.
 # La Planificación de Orden Parcial es un enfoque que permite planificar y ordenar tareas en un proyecto sin necesidad de tener todas las dependencias definidas de antemano.
-
+ 
 class Task:
     def __init__(self, name):
         self.name = name
