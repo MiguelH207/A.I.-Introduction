@@ -3,6 +3,7 @@
 # Las redes jerárquicas de tareas son una técnica de planificación en la que las tareas se organizan en una jerarquía,
 # donde las tareas principales se dividen en subtareas más pequeñas, y así sucesivamente, hasta llegar a las tareas más simples.
 
+
 class Task:  # Definición de la clase Task para representar una tarea
     def __init__(self, name, duration):  # Método constructor para inicializar los atributos de la tarea
         self.name = name  # Nombre de la tarea
