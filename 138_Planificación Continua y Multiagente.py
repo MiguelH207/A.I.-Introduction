@@ -1,7 +1,7 @@
 # Miguel Angel Huerta Castillo     21310236
 # Este programa implementa un ejemplo de planificación continua y multiagente en Python.
 # Utiliza una simulación simple donde varios agentes tienen que planificar su ruta para alcanzar un objetivo común, evitando obstáculos.
-
+ 
 import numpy as np  # Importa la librería numpy para trabajar con matrices y operaciones numéricas
 
 class Agent:
