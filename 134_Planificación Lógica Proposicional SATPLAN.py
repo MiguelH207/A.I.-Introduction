@@ -3,6 +3,7 @@
 # un algoritmo de planificación basado en SAT (Satisfiability).
 # Primero, define funciones para generar todas las combinaciones posibles de acciones y para verificar si un conjunto de acciones satisface un objetivo dado. Luego, implementa la función principal satplan que busca una secuencia de acciones que satisfaga el objetivo dado el estado inicial y las acciones disponibles. Finalmente, se llama a satplan con un estado inicial, acciones disponibles y objetivo, y se imprime el plan encontrado. 
 
+
 import itertools
 
 # Función para generar todas las combinaciones posibles de un conjunto de acciones
