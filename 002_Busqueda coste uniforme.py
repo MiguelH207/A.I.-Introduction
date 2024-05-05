@@ -2,20 +2,7 @@
 # 21310236 # 
 
 ## BUSQUEDA COSTE UNIFORME ##
-import heapq ## 
-
-# Definimos el mapa con las distancias entre las ciudades
-rutas = {
-    'Guadalajara': {'Zapopan': 7, 'Tlaquepaque': 15, 'Tonalá': 20},
-    'Zapopan': {'Guadalajara': 7, 'Tlajomulco de Zúñiga': 50},
-    'Tlaquepaque': {'Guadalajara': 15, 'Tonalá': 30},
-    'Tonalá': {'Guadalajara': 20, 'Tlaquepaque': 30, 'El Salto': 10},
-    'Tlajomulco de Zúñiga': {'Zapopan': 50},
-    'El Salto': {'Tonalá': 10}
-}
-## CADA CIUDAD ES UN NODO Y CADA RUTA ENTRE DOS CIUDADES ES UN ARISTA ## 
-## POR EJEMPLO: DEL NODO GUADALAJARA HAY 3 RUTAS, UNA QUE LA CONECTA A ZAPOPAN, OTRA A TLAQUPAQUE Y OTRA A TONALA ## 
-## AHORA A CADA RUTA LE DESTINAMOS UN COSTE EN ESTE CASO LOS KILOMETROS DE DISTANCIA ## 
+import heapq 
 
 
 def bcu(grafico, inicio, fin): ## Se crea la funcion de busqueda coste uniforme (bcu) donde grafico es el grafo donde estara buscando, y su nodo de inicio y fin.
@@ -30,6 +17,20 @@ def bcu(grafico, inicio, fin): ## Se crea la funcion de busqueda coste uniforme 
             for vecina, costo_vecina in grafico[ciudad].items(): ## Si el nodo actual no es el nodo que estamos buscando, recorremos cada uno de los vecinos del nodo actual.
                 if vecina not in visitado: ## Verificamos si el vecino actual ya ha sido visitado. Si no es así, lo agregamos a la cola de nodos por visitar.
                     heapq.heappush(cola, (costo + costo_vecina, vecina)) ## Agregamos el vecino a la cola de nodos por visitar, junto con el costo total de la ruta desde el nodo de inicio hasta el vecino a través del nodo actual.
+
+
+# Definimos el mapa con las distancias entre las ciudades
+rutas = {
+    'Guadalajara': {'Zapopan': 7, 'Tlaquepaque': 15, 'Tonalá': 20},
+    'Zapopan': {'Guadalajara': 7, 'Tlajomulco de Zúñiga': 50},
+    'Tlaquepaque': {'Guadalajara': 15, 'Tonalá': 30},
+    'Tonalá': {'Guadalajara': 20, 'Tlaquepaque': 30, 'El Salto': 10},
+    'Tlajomulco de Zúñiga': {'Zapopan': 50},
+    'El Salto': {'Tonalá': 10}
+}
+## CADA CIUDAD ES UN NODO Y CADA RUTA ENTRE DOS CIUDADES ES UN ARISTA ## 
+## POR EJEMPLO: DEL NODO GUADALAJARA HAY 3 RUTAS, UNA QUE LA CONECTA A ZAPOPAN, OTRA A TLAQUPAQUE Y OTRA A TONALA ## 
+## AHORA A CADA RUTA LE DESTINAMOS UN COSTE EN ESTE CASO LOS KILOMETROS DE DISTANCIA ## 
 
 
 costo = bcu(rutas, 'Guadalajara', 'Tlajomulco de Zúñiga') ## llamamos la funcion bcu con sus valores iniciales.
